@@ -2,8 +2,6 @@
 
 Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
-
-
 ## Instructions
 - Answer the multiple-choice questions by selecting the correct option.
 - For theoretical questions, provide concise and accurate explanations.
