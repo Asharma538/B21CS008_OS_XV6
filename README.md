@@ -116,4 +116,23 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 20. Outline the steps involved in the boot process of XV6. What happens from the moment the computer is powered on to when the XV6 kernel is loaded into memory?
 
 ## Answers
-Please write your answers here
+1. b. A Unix-like operating system
+2. b. Linux
+3. d. simple
+4. a. As functions in the C standard library
+5. x
+6. c. Sh
+7. a. Round-robin scheduling
+8. a. Paging
+9. d. Both b and c
+10. b. No
+11. c. MIT
+12. Answer
+   1. Unused: process before the allocation of resources
+   2. Embryo: when new process is created and is not allocated a stack and a page table
+   3. Sleeping: when sleep() syscall is used
+   4. Runnable: When the process is ready to be executed but not currently in the CPU
+   5. Running: When the process is getting executed in the CPU
+   6. Zombie: When a process has finished executing but the resources that were used by it are not freed
+13. Answer
+     
