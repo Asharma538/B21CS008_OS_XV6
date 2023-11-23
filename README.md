@@ -120,7 +120,7 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 2. b. Linux
 3. d. simple
 4. a. As functions in the C standard library
-5. x
+5. a. 128
 6. c. Sh
 7. a. Round-robin scheduling
 8. a. Paging
@@ -128,11 +128,23 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 10. b. No
 11. c. MIT
 12. Answer
-   1. Unused: process before the allocation of resources
+   1. Unused: process before the allocation of resources any resources
    2. Embryo: when new process is created and is not allocated a stack and a page table
    3. Sleeping: when sleep() syscall is used
    4. Runnable: When the process is ready to be executed but not currently in the CPU
    5. Running: When the process is getting executed in the CPU
    6. Zombie: When a process has finished executing but the resources that were used by it are not freed
 13. Answer
+    The XV6 file system is orgaised in 7 layers in an heirarchial structure, the layers are:
+    File Descriptor: file descriptor layer abstracts many Unix resources (e.g., pipes, devices, files, etc.) using the file system interface
+    Pathname: The pathname layer provides hierarchical path names like /bin/ys/xys/xyz, and resolves them with recursive lookup
+    Directory: A directory can contain a group of files or other directories
+    Inode:  The inode layer provides individual files, each with a unique i-number
+    Logging: The logging layer allows higher layers to wrap updates to several blocks in a transaction, and ensures that the blocks are updated atomically in the face of crashes
+    Buffer Cache: The Buffer Cache layer caches disk blocks and synchronizes access to them, making sure that only one kernel process at a time can modify the data stored in any particular block.
+    Disk: Disk hardware traditionally presents the data on the disk as a numbered sequence of 512-byte blocks
+14. 
+
+15. System calls in XV6 are implemented in the kernel mode library functions are executed in user mode.
+    
      
