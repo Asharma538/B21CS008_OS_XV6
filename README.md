@@ -143,8 +143,22 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
     Logging: The logging layer allows higher layers to wrap updates to several blocks in a transaction, and ensures that the blocks are updated atomically in the face of crashes
     Buffer Cache: The Buffer Cache layer caches disk blocks and synchronizes access to them, making sure that only one kernel process at a time can modify the data stored in any particular block.
     Disk: Disk hardware traditionally presents the data on the disk as a numbered sequence of 512-byte blocks
-14. 
-
-15. System calls in XV6 are implemented in the kernel mode library functions are executed in user mode.
-    
-     
+14. System calls in XV6 are implemented in the kernel mode library functions are executed in user mode. System calls will have certain previledges and user calls will be unpreviledged
+15. In xv6, paging is used for memory management. xv6 uses 32 bit VA, so memory size can go upto 4GB. A page size of 4KB is maintained, and a 2 level page table is used. Paging helps in non-
+    contiguous memory allocation, by dividing memory into frames and programs into pages of equal sizes.
+16. 1. ls - shows files and directories in a directory
+    2. echo - used for printing whatever we give with it.
+    3. grep - find/match some text in file
+17. In the xv6 operating system, process synchronization is achieved using locks. This is crucial for maintaining memory consistency and preventing race conditions. Additionally, it helps prevent
+    deadlock situations where processes wait indefinitely for each other to release resources.
+18. When an interrupt occurs, the processor execution of current program is stopped and an interrupt handler begins execution. This handler is responsible for dealing and resolving the interrupt.       Once this is over, the program again starts (if it has not been terminated). Its register values are saved at the time of interrupt, so that these can be restored at this instant.
+19. XV6 has no implementation of virtual memory, It is useful to implement the concept of virtual memory in order to increase the degree of multi-programming
+20. BIOS Initialization
+    Boot Loader Execution
+    Kernel Loading
+    Initial Setup
+    Device Initialization
+    Kernel creates the first process, called the init process, which is responsible for initializing the system and starting user applications
+    User Environment Setup
+    Shell Process initialisation and execution by Init process
+    User Interaction using Shell
